@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
   <div id="app">
     <!-- Barra de navegación con enlaces a diferentes rutas -->
@@ -11,13 +15,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="/addtask"><i class='bx bx-plus-circle'></i> Añadir Tareas</a>
+          <router-link class="nav-link" to="/addtask"><i class='bx bx-plus-circle'></i> Añadir Tareas</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/tasklist"><i class='bx bx-list-ul' ></i> Lista de Tareas</a>
+          <router-link class="nav-link" to="/tasklist"><i class='bx bx-list-ul' ></i> Lista de Tareas</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/combinedview"><i class='bx bx-customize' ></i> Vista Combinada</a>
+          <router-link class="nav-link" to="/combinedview"><i class='bx bx-customize' ></i> Vista Combinada</router-link>
         </li>
       </ul>
     </div>

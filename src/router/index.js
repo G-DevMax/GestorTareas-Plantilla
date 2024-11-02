@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import HomeView from '@/views/HomeView.vue';
 import CombinedView from '@/views/CombinedView';
-import AddTask from '@/views/AddTask.vue';
-import TaskList from '@/views/TaskList.vue';
+import AddTask from '@/components/AddTask.vue';
+import TaskList from '@/components/TaskList.vue';
 // Importa los otros componentes en esta sección
 
 Vue.use(VueRouter);
